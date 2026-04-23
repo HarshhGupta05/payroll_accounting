@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Payslip</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container" style="max-width: 500px;">
+        <div class="nav">
+            <h2>My Payslip</h2>
+            <button onclick="logout()" class="secondary">Logout</button>
+        </div>
+        <div id="payslipContent">
+            <p><strong>Name:</strong> <span id="empName"></span></p>
+            <hr>
+            <p><strong>Base Salary:</strong> $<span id="empBase"></span></p>
+            <p><strong>Bonus:</strong> $<span id="empBonus"></span></p>
+            <p><strong>Tax Deduction (20%):</strong> -$<span id="empTax"></span></p>
+            <hr>
+            <h3><strong>Net Pay:</strong> $<span id="empNet"></span></h3>
+        </div>
+    </div>
+    <script src="js/auth.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/calculator.js"></script>
+    <script src="js/employee.js"></script>
+</body>
+</html>
